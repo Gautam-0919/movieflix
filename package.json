@@ -1,9 +1,12 @@
 {
+  "homepage": "https://gautam-0919.github.io/Movieflix",
   "name": "kevin",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,5 +15,8 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
